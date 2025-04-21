@@ -15,7 +15,7 @@ st.write("Upload an image to detect glasses using a YOLO model!")
 # --- Load the YOLO model
 @st.cache_resource
 def load_model():
-    model = YOLO(r'C:\Users\Hp\OneDrive\Desktop\PYthon navtac\model.pt')  # <-- Put your model path here
+    model = YOLO('model.pt')  # <-- Put your model path here
     return model
 
 model = load_model()
